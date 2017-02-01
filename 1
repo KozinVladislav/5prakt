@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css.css">>
+<script>
+	function foo(what, how) {
+let students = [
+{
+"name": "Dima",
+"date": "1993"
+}, {
+"name": "Alfred",
+"date": "1995"
+}, {
+"name": "Oscar",
+"date": "1991"
+}
+];
+
+let key = function(x) { return x[what == "name" ? 'name' : 'date']; };
+let reverse = how == "mintomax" ? 1 : -1;
+
+students.sort(function (a, b) {
+return a = key(a), b = key(b), reverse * ((a > b) - (b > a));
+});
+
+return students;
+}
+</script>
+<title></title>
+</head>
+
+<body>
+
+</body>
+</html>
